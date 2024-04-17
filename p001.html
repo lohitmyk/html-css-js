@@ -1,156 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafe Page</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-          "Lucida Sans", Arial, sans-serif;
-      }
-      .head {
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        margin: 10px;
-      }
-      .line {
-        width: 50%;
-        height: 1px;
-        background-color: black;
-        overflow: hidden;
-      }
-      .container {
-        display: flex;
-        gap: 20px;
-        justify-content: space-evenly;
-        align-content: center;
-        flex-wrap: wrap;
-        padding: 8px;
-        width: 50%;
-        margin: 10px;
-      }
-      .card {
-        border: 1px solid gainsboro;
-        border-radius: 10px;
-        height: 250px;
-        width: 200px;
-        background-color: gainsboro;
-        overflow: hidden;
-      }
-      .card img {
-        width: 100%;
-        height: 200px;
-        transition: all 1s ease;
-        object-fit: cover;
-      }
-      /* .card:hover img {
-        width: 200px;
-        height: 200px;
-      } */
-
-      .card .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-        background-color: gainsboro;
-      }
-      .card .info .cost {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        font-size: 12px;
-        padding: 5px;
-      }
-      .card .info .cost button {
-        margin-bottom: 5px;
-        border-radius: 5px;
-        padding: 1px;
-        width: 35px;
-        cursor: pointer;
-      }
-    </style>
-  </head>
+    <meta charset="utf-8">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ </head>
+  
   <body>
-    <div class="head">
-      <p>Coffee Shop</p>
-      <p>Cart:0</p>
+
+    <header>
+<!--Amazon Image Logo-->
+      <div class="d-flex flex-row justify-content-center">
+        <div class="row">
+          <div class="col-md">
+            <img class="img_1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2221140/amazonimg.png" alt="Amazon Logo"/>
+          </div><!--Col 1 End-->
+        </div><!--Row 1 End-->
+      </div><!--Container End-->
+<!--Amazon Image Logo-->
+   </header>     
+     
+      
+<!--Form-->
+      <div class="d-flex flex-row justify-content-center">
+        <div class="row">
+          <div class="col-md">
+           <form>
+             <div class="sign-in">Sign In</div>          
+  <div class="form-group">
+    <label id="words_1" for="exampleInputEmail1">Email(phone for mobile accounts)</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted"></small>
+  </div>
+  <div class="form-group">
+    <label id="words_2" for="exampleInputPassword1">Password &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Forgot your password? </label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <div class="form-group">
+      <button type="button" class="btn btn-warning" id="sign-in">Sign In</button>
+       <input type="checkbox" class="form-check-input checkbox" id="exampleCheck1">
+      <p class="keep-sign-in">Keep me signed in. <a href="https://stupidlink.com">Details</a></p>
+      <img id="amazon-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2221140/newtoamazon1.svg" alt="Amazon Image">
     </div>
-    <div class="line"></div>
-    <div class="container">
-      <div class="card c1">
-        <img src="C:\Users\lohit\OneDrive\Pictures\product1.PNG" alt="" />
-        <div class="info">
-          <h4>Latte</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
-      <div class="card c2">
-        <img src="./Images/2.PNG" alt="" />
-        <div class="info">
-          <h4>Cappucinno</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
-      <div class="card c3">
-        <img src="./Images/3.PNG" alt="" />
-        <div class="info">
-          <h4>Sandwich</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
-      <div class="card c4">
-        <img src="./Images/4.PNG" alt="" />
-        <div class="info">
-          <h4>Novelty</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
-      <div class="card c5">
-        <img src="./Images/5.PNG" alt="" />
-        <div class="info">
-          <h4>Soy Milk</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
-      <div class="card c6">
-        <img src="./Images/6.PNG" alt="" />
-        <div class="info">
-          <h4>Cocoa Blocks</h4>
-          <p class="cost">
-            Price:$99
-            <button type="button">add</button>
-          </p>
-        </div>
-      </div>
+  </div>
+  <div class="form-check">
+   
+    
+  </div>
+  <button type="button" class="btn btn-warning" id="grey-button">Create your Amazon account</button>
+  
+</form> 
+          </div><!--Col 1 End-->
+        </div><!--Row 1 End-->
+      </div><!--Container End-->
+<!--Form-->
+      
+      
+      
+
+<div class="d-flex flex-row justify-content-center footer_1">
+  <div class="row">
+    <div class="col">
+      <p class="conditions"><a>Conditions of Use &nbsp &nbsp &nbsp </a>   <a>Privacy Notice&nbsp &nbsp &nbsp </a>   <a>Help&nbsp &nbsp &nbsp </a></p>
+    </div><!--Footer Col 1 End-->
+  </div><!--Footer Row 1 End-->
+  
     </div>
-  </body>
-</html>
+
+  
