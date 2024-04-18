@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    
+</head>
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("./netflix.png");
+        background-size: cover;
+        background-position: center;
+      }
+    .c1{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(3, 14, 21);
+        padding: 10px;
+        border: 1px solid #000;
+    }
+    .btns {
+        flex-wrap: wrap;
+        position: fixed;
+        top: 13px;
+        right: 10px;
+        background-color: black;
+      }
+      .btns input[type="submit"] {
+        padding: 10px 20px;
+        font-weight: bold;
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      select {
+        height: 40px;
+        width: 90px;
+        padding: 0 10px;
+        margin: 10px 0;
+        background-repeat: no-repeat;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 1px;
+        right: 120px;
+      }
+</style>
+
+<body>
+    <div class="c1">
+    <img src="./Netflixlogomd2.jpg"
+    alt="Netflix logo"
+    </div>
+    <select name="Languages" id="Languages">
+        <option value="1" selected>English</option>
+        <option value="2">Hindi</option>
+        <option value="3">Telugu</option>
+        <option value="4">Marathi</option>
+        <option value="5">Tamil</option>
+        <option value="6">Kannada</option>
+      </select>
+
+    <div class="btns">
+        <input type="submit" value="Sign in" />
+    </div>
+
+    
+</body>
+</html>
