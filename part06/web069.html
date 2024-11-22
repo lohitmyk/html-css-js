@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <select id="fruits" >
+            <option value="mango">mango</option>
+            <option value="Apple">Apple</option>
+            <option value="Pine">Pine</option>
+         </select>            
+         <br/> <br/>
+         <input type= "button" onclick="disp()" value="click"></button>
+         <br/><br/>
+         <label id="lbl"></label>
+    </form>
+    <script>
+        function disp(){
+            let str=fruits.value;
+            //str=""
+            //for(let e of fruits.options){
+             //if(e.selected) str+=e.value +","
+            lbl.innerHTML=str; 
+        }
+    </script>
+</body>
+</html>

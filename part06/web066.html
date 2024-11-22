@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function fnc(){
+      let strName = document.getElementById("txtName").value
+      let strPass = document.getElementById("txtPass").value
+      let getit = users.find((value)=>{
+        return value.email===strName && value.password===strPass
+      })
+      console.log(getit)
+      if(getit) {
+        lblMessage.innerHTML="Welcome"
+      }
+      else{
+        lblMessage.innerHTML="Access denied"
+      }
+    }
+    const users=[];
+    function register(){
+        const obj ={};
+        obj.name=txtregname.value
+        obj.email=txtregUname.value
+        obj.password=txtregpass.value
+        users.push(obj);
+        lblusers.innnerHTML= JSON.stringify(users);
+    }
+      
+    </script>
+</head>
+<body>
+  <h3>Login Here</h3>
+  <p><label id="lblMessage"></label></p>
+  <p><input type ="text" id="txtName" placeholder="email or phone number"></p>
+  <p><input type ="password" id="txtPass"  placeholder="password"></p>
+  <button onclick="fnc()">Login</button>
+  <hr>
+  <h3>Register Here</h3>
+  <p><label id="regmsg"></label></p>
+  <p><input type="text" id="txtregname" placeholder="Enter name"></p>
+  <p><input type="text" id="txtregUname" placeholder="Enter email"></p>
+  <p><input type = "password" id="txtregpass" placeholder="create password"></p>
+  <button onclick="register()">Register Here</button>
+  <hr>
+  <label id="lblusers"></label>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><input type="checkbox" name="fruits" class ="c"value="Mango">Mango</p>
+    <p><input type="checkbox" name="fruits" class ="c" value="Papaya">Papaya</p>
+    <p><input type="checkbox" name="fruits" class ="c" value="Guava">Guava</p>
+    <button onclick="display()">Submit</button>
+    <p id="p1"></p>
+    <script>
+        const display=()=>{
+            let fruit = document.getElementsByName("fruits")
+            let txt="";
+            for(let i=0;i<fruit.length;i++){
+                if(fruit[i].checked){
+                    txt=txt+fruit[i].value+"";
+                }
+            }
+            p1.innerHTML=txt;
+        };
+    </script>
+</body>
+</html>

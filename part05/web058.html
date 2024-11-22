@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        const products=[{"name":"product1","price":300},
+        {"name":"product2","price":100},
+        {"name":"product3","price":500}];
+        const cart=[];
+       // products[0].quantity=2
+        //products[1].quantity=3
+        //products.total=products.quantity*products.price
+        let item = products[0]
+        item.quantity=2
+        item.total=item.quantity*item.price
+        cart.push(item)
+        item=products[2]
+        item.quantity=3
+        item.total=item.quantity*item.price
+        cart.push(item)
+        console.log(cart);
+        let orderValue=cart.reduce((sum,value)=>{
+            return sum+value.total
+        },0);
+        console.log("OrderValue is",orderValue);
+    </script>
+    
+</body>
+</html>

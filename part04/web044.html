@@ -7,18 +7,16 @@
     <script>
       function f1() {
         let n = t1.value;
-        if (t1="green") {
-          lbl.innerHTML = "Hello world";
+        if (n % 2 == 0) {
+          lbl.innerHTML = "Even Number";
           lbl.style.color="green"
-          lbl.background.color="white"
-        }
-        else{
+          lbl.style.background="yellow"
+        } else {
           lbl.innerHTML = "Odd Number";
           lbl.style.color="blue"
           lbl.style.background="pink"
         }
-    }
-      
+      }
     </script>
   </head>
   <body>

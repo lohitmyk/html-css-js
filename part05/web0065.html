@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnc(){
+        //let msg = document.getElementById("p1")
+      // messages.style.background= "blue" ;
+       // msg.style.background= "yellow" ; 
+        //console.log(msg)
+        //messages[1].style.background="green" ;
+        // msg.style.background="yellow"
+        //let messages=document.getElementsByTagName("p")
+        //for(i=0;i<messages.length;i++){
+        //messages[i].style.background="yellow";
+        //let messages=document.querySelectorAll("p")
+        //let messages=document.getElementsByClassName("c1")
+        let messages=document.getElementsByName("c1");
+
+        for(i=0;i<messages.length;i++){
+        messages[i].style.background="yellow"
+        }
+        console.log(messages)
+        }
+    </script>
+</head> 
+<body>
+    <p id="p1" name="c1">This is a paragraph</p>
+    <p id="p2" name="c1">This is a second paragraph</p>
+    <p id="p3" name="c1">This is a third paragraph</p>
+    <button onclick="fnc()">Click</button>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            background-color: pink;
+        }
+        .page{
+            font-size: 40px;
+        }
+        .newclass{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="p1()">home</button>
+    <button onclick="p2()">color</button>
+    <button onclick="p3()">style</button>
+    <p>Hello World</p>
+    <script>
+        function p1(){
+            document.body.classList.add("home");
+        }
+        function p2(){
+            document.body.classList.add("page");
+        }
+        function p3(){
+            document.body.classList.add("newclass");
+        }
+        
+    </script>
+    
+</body>
+</html>
